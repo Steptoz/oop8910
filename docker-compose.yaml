@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  postgres:
+    image: 'postgres:latest'
+    container_name: 'oop8910'
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: step
+      POSTGRES_PASSWORD: pets
+      POSTGRES_DB: docum_db
+    volumes:
+      - /var/lib/postgresql/data
